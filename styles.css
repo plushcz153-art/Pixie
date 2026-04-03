@@ -76,6 +76,9 @@ nav {
 }
 
 .nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: -0.5px;
@@ -84,6 +87,13 @@ nav {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-decoration: none;
+}
+
+.nav-logo-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -117,6 +127,15 @@ nav {
 .nav-links a.discord-link:hover {
   background: rgba(88, 101, 242, 0.12);
   color: #fff;
+}
+
+/* ── Hero Logo ── */
+.hero-logo {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 40px rgba(88, 101, 242, 0.4));
 }
 
 /* ── Hero ── */
@@ -359,6 +378,9 @@ footer {
 }
 
 .footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   font-size: 1.1rem;
   font-weight: 800;
   background: linear-gradient(135deg, #fff 30%, var(--accent2) 100%);
@@ -366,6 +388,13 @@ footer {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-decoration: none;
+}
+
+.footer-logo-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 footer p {
